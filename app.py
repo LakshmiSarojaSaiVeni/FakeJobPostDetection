@@ -64,6 +64,7 @@ if st.button("Predict"):
         job_prob = model.predict_proba(job_vec)[:, 1][0]
         prediction = 1 if job_prob >= custom_threshold else 0
         result = "**Fake Job Posting!**" if prediction == 1 else "**Real Job Posting!**"
-        st.markdown(f"### Prediction: {result} (Confidence: {job_prob:.2f})")
+        st.markdown(f"### Prediction: {result}")
     else:
         st.warning("Please enter a job description to predict.")
+
