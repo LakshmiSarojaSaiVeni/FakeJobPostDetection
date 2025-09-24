@@ -7,7 +7,7 @@ This project detects whether a job posting is **real** or **fake** using Machine
 
 ### Features:
 - Word clouds for fake vs real job postings
-- Logistic Regression model for classification
+- Random Forest model is used for training
 - Interactive job description tester
 
 ### How to Run Locally:
